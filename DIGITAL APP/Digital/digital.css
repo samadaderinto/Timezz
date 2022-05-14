@@ -1,0 +1,102 @@
+*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: black;
+
+}
+
+body .digital-clock {
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+    font-weight: bolder;
+    word-spacing: 30px;
+    position: fixed;
+    margin-bottom: 2.5rem; 
+    
+}
+
+
+
+
+body .digital-clock .design {
+  display: flex;
+   height: 6rem;
+   width: 6rem;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   color: #3b3535;
+}
+
+
+body .digital-clock .design:nth-child(3) {
+  height: 9rem;
+  color: #fff;
+ 
+}
+
+.colon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: blink 1s infinite;
+  margin-top: 40px;
+  height: 9rem;
+  color: #fff;
+  font-size: 50px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+body .digital-clock .columns {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+
+body .digital-clock .columns .Unit {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  color: #fff;
+}
+
+.border {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-top: none;
+}
+
+
+::selection {
+  background-color: rgb(21, 148, 21);
+}
